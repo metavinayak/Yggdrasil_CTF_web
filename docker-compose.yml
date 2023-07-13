@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  chall:
+    container_name: alfheim
+    build: .
+    ports:
+      - 9999:5000
+    networks:
+      - default
+networks:
+  default:
